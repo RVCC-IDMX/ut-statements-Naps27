@@ -13,7 +13,7 @@
  * @returns {integer} - the next integer as if you were counting up by 1
  */
 function nextInteger(int) {
- return int + 1;
+  return int + 1;
 }
 /**
  * Calculates the product of two numbers
@@ -22,7 +22,7 @@ function nextInteger(int) {
  * @returns {number} - The result of the multiplication
  */
 function times(a, b) {
-  return a*b;
+  return a * b;
 }
 
 /**

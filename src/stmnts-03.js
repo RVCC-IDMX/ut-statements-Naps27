@@ -42,7 +42,6 @@ function rectangleArea(width, height) {
 function circleCircumference(radius) {
   const circumference = 2 * Math.PI * radius;
   return parseFloat(circumference.toFixed(2));
-
 }
 
 /**
@@ -52,7 +51,7 @@ function circleCircumference(radius) {
  * @returns {number} - the area of the circle rounded to 2 decimal places
  */
 function circleArea(radius) {
-  const carea = Math.PI * Math.pow(radius, 2);
+  const carea = Math.PI * radius ** 2;
   return parseFloat(carea.toFixed(2));
 }
 /**

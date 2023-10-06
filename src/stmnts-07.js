@@ -1,3 +1,5 @@
+/* eslint-disable no-tabs */
+/* eslint-disable no-plusplus */
 /*
  * stmnts-07.js
  * Language: javascript
@@ -68,8 +70,8 @@ function numberOfOdds(num) {
  */
 function addUpTheNumbers(num) {
   let sum = 0;
-  for ( let i = 1; i <= num; i++){
-    sum +=i;
+  for (let i = 1; i <= num; i++) {
+    sum += i;
   }
   return sum;
 }
@@ -90,21 +92,20 @@ function addUpTheNumbers(num) {
  * ?
  */
 function gradeGenerator(score) {
-  if (score < 60){
-    return "F";
+  if (score < 60) {
+    return 'F';
   }
-  else if (score < 70){
-    return "D";
+  if (score < 70) {
+    return 'D';
   }
-  else if (score < 80){
-    return "C";
+  if (score < 80) {
+    return 'C';
   }
-  else if (score < 90){
-    return "B"; 
+  if (score < 90) {
+    return 'B';
   }
-  else{
-    return "A";
-  }
+
+  return 'A';
 }
 
 /**
@@ -125,15 +126,14 @@ function gradeGenerator(score) {
  */
 function getGrade(name, score) {
   const letterGrade = gradeGenerator(score);
-  if (['A','F'].includes(letterGrade.charAt(0))) {
+  let article;
+  if (['A', 'F'].includes(letterGrade.charAt(0))) {
     article = 'an';
+  } else if (['B', 'C', 'D'].includes(letterGrade.charAt(0))) {
+    article = 'a';
   }
-  else if (['B','C','D'].includes(letterGrade.charAt(0))){
-  article = 'a';
+  return `${name} got ${article} ${letterGrade}`;
 }
-return `${name} got ${article} ${letterGrade}`;
-}
-
 
 module.exports = {
   logicalAnd,

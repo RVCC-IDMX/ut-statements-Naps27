@@ -30,7 +30,7 @@ function isEven(num) {
  * @returns {boolean} - true if value is a negative number, false otherwise
  */
 function isNegative(value) {
-  return value = 'number' && value < 0;
+  return 'number' && value < 0;
 }
 
 module.exports = {

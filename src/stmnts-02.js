@@ -24,7 +24,7 @@ function sum(a, b) {
  * @returns {number} - The sum of the two numbers
  */
 function betterSum(x, y) {
-  return +x + +y ;
+  return +x + +y;
 }
 
 /**

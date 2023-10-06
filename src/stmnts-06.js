@@ -22,7 +22,6 @@ function isString(str) {
  */
 function isBlank(str) {
   return str.length === 0;
-
 }
 
 /**
@@ -34,11 +33,10 @@ function isBlank(str) {
  * @returns {string} - the name of the person
  */
 function sayHelloOrBye(name, num) {
-  if (num === 0){
-    return 'Hello ' + name;
+  if (num === 0) {
+    return `Hello ${name}`;
   }
-  else {return 'Bye ' +  name;
-}
+  return `Bye ${name}`;
 }
 
 /**
